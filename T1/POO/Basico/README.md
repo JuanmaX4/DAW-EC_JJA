@@ -19,4 +19,4 @@ ___
 
 # UML Diseño 🖼
 
-![uml](uml.png)
+![uml](UML.PNG)
