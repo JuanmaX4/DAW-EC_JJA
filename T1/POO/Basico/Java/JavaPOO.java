@@ -1,4 +1,4 @@
-package T1.POO.Basico;
+package T1.POO.Basico.Java;
 
 class JavaPOO{
 
