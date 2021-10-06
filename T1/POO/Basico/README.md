@@ -33,6 +33,6 @@ Las instancias especifica una ocurrencia en una determinada clase o entidad,
 esto hace que en lugar de tener atributos tiene variables.
 ___
 
-# UML Diseño 🖼
+# UML Diseño Basico 🖼
 
 ![uml](UML.PNG)

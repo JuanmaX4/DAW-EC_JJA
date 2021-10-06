@@ -1,13 +1,11 @@
-public class HerenciaMascota extends Intermedio{
+public class HerenciaMascota{
+    
     //TODO Herencia
-
-q
     public static void main(String[] args) {
         //TODO Polimorfismo
     
-        Intermedio.AbsMascota Perro = new Intermedio.AbsMascota("Canino", "Blanco y Negro", "8");
-        Perro.getNombre("Noa");
-        System.out.println("Mi gato se llama: " + Perro.getNombre());
+        Intermedio perro = new Intermedio("Canino", "Blanco y Negro", 10);
+        System.out.println(perro.toString());
 
     }
 }

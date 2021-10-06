@@ -22,6 +22,6 @@ El polimorfismo es la habilidad de una función, método, variable u objeto de p
 
 ___
 
-# UML Diseño 🖼
+# UML Diseño Intermedio 🖼
 
-![uml](UML.PNG)
+![uml](UMLIntermedio.PNG)
