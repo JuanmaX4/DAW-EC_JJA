@@ -2,9 +2,8 @@ package Java;
 
 public class MainJavaPOO {
     public static void main(String[] args) {
-        
-        JavaPOO animal = new JavaPOO ("Luna", "Gato", 18);
+        Pepe animal = new Pepe("Luna", "Gato", 18);
 
-       
+        System.out.println(animal.toString());
     }
 }

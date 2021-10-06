@@ -1,22 +1,21 @@
-package T1.POO.Basico.Java;
+package Java;
 
-class JavaPOO{
+class Pepe{
 
-    String nombreAnimal;
-    String especie;
-    int edad;
+    public String nombreAnimal;
+    public String especie;
+    public int edad;
 
-    JavaPOO(){
+    Pepe(){
 
     }
 
-    JavaPOO(String nombreAnimal, String especie, int edad){
+    Pepe(String nombreAnimal, String especie, int edad){
         this.nombreAnimal=nombreAnimal;
         this.especie=especie;
         this.edad=edad;
     }
 
-    //? TODO GETTER's
     public String getNombreAnimal() {
         return nombreAnimal;
     }
@@ -29,8 +28,6 @@ class JavaPOO{
         return edad;
     }
 
-    //TODO SETTER's
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
@@ -42,13 +39,9 @@ class JavaPOO{
     public void setNombreAnimal(String nombreAnimal) {
         this.nombreAnimal = nombreAnimal;
     }
-
-    //? TO String
-
+    
     @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        
+    public String toString() {        
         return "Animal pertenece a la especie: "+getEspecie()+" y su nombre es: "+getNombreAnimal()+" y su edad es:" +getEdad();
     }
 }
