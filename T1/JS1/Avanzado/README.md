@@ -14,6 +14,6 @@ Las etiquetas "form" son la base para el traspaso de datos a los programas CGI
 en el servidor.
 Un formulario de una página web es una colección de campos de entrada que comunican su contenido al servidor.
 ___
-## UML Diseño Intermedio JS1 🖼
+## UML Diseño Avanzado JS1 🖼
 ___
  ![uml](UMLAvanzado.PNG)
