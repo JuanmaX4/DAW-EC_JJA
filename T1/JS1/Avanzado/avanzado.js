@@ -1,15 +1,3 @@
-/*document.write(variable);
-
-for(i=0; i<=3; i++){
-        var variable = variable.innerHTML = `
-        <table class=»egt»>
-        <tr>
-        <th>Hoy</th>
-    </tr>
-    </table>`;
-}   */
-
-
 function getTabla(variable, variable2, variable3) {
     tabla.innerHTML=`
     <table style="width:100%">
@@ -28,4 +16,28 @@ function getTabla(variable, variable2, variable3) {
     alert('Mi cumple!! :D')
 
 }
+
 getTabla('Dia', 'Mes', 'Año');
+
+function getTablaSinParametros() {
+  tabla2.innerHTML=`
+  <table style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>ID</th>
+  </tr>
+  <tr>
+      <td>Juanma</td>
+      <td>Jimenez</td>
+      <td>30262337X</td>
+  </tr>
+    </table> `;  
+
+  alert('Mi cumple!! :D')
+
+}
+
+getTablaSinParametros();
+
+
