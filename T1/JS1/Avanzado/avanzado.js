@@ -17,6 +17,7 @@ function getTabla(variable, variable2, variable3) {
 
 }
 
+//document.write(getTabla('Dia', 'Mes', 'Año'));
 getTabla('Dia', 'Mes', 'Año');
 
 function getTablaSinParametros() {
@@ -34,7 +35,7 @@ function getTablaSinParametros() {
   </tr>
     </table> `;  
 
-  alert('Mi cumple!! :D')
+  alert('Mi DNI!!')
 
 }
 
