@@ -1,15 +1,14 @@
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
-  }
-  .wrapper {
-    width: 400px;
-    margin: 20px auto 0;
-    text-align: center;
-  }
-  button {
-    font-size: 16px;
-    padding: 15px;
-  }
-  table { width: 100%; }
-  table th, table td { padding: 7px 5px; border-bottom: 1px solid #ccc; }
+th, td, p, input {
+  font:14px Verdana;
+}
+table, th, td 
+{
+  border: solid 3px black;
+  padding: 2px 3px;
+  text-align: center;
+  margin: 10px;
+}
+th {
+  font-weight:bold;
+}
+  
