@@ -80,19 +80,41 @@ var paises = [
         "capital":"Praga"
     },
 ]
+
 function CreateTableFromJSON() {
     
     var instanciadorTabla = document.getElementById("tabla");
 
     //! peligro
     // For donde van todo el json
-    for (var i = 0; i < paises.length; i++) {
-        instanciadorTabla.innerHTML=`
-        <table style="width:100%">
+for (var i = 0; i < paises.length; i++) {
+    instanciadorTabla.innerHTML+=`
         <tr>
           <th>${paises[i].nombre}</th>
           <th>${paises[i].capital}</th>
-        </tr>
-          </table> `;
+        </tr>`;
     }
 }
+
+function filtrar(){
+
+    const filtrar = () =>{
+        let inputValue = document.getElementById("filtrar").value.toLowerCase(); 
+        document.getElementById("tabla").innerHTML = inputValue; 
+    }
+}
+/*<script language="javascript">     
+    function recibir()
+    {
+        var valor = document.getElementById("texto").value;
+        document.write(valor);        
+        
+    }        
+</script> 
+<form id="formulario" method="Post">
+
+<input type="text" id="texto"/>
+<input type="button" name="enviar" onKeyup="recibir();"/>
+
+</form>
+*/

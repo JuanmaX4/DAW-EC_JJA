@@ -1,14 +1,14 @@
 th, td, p, input {
   font:14px Verdana;
 }
-table, th, td 
-{
-  border: solid 3px black;
+table, th, td {
+  border: solid 5px black;
   padding: 2px 3px;
   text-align: center;
   margin: 10px;
 }
-th {
+
+td::first-line {
   font-weight:bold;
 }
   

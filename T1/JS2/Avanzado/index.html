@@ -3,17 +3,21 @@
 <head>
     <title>Tabla Paises</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>Capitales de Europa</h1>
-    <input type="search" onsearch="filtrar()" placeholder="Busca por capitales">
+    <input type="search" onkeyup="filtrar()" placeholder="Busca por capitales">
+    <br></br>
+    
     <table id="tabla">
         <tr>
-            <td></td>
-            <td></td>
+            <td>Paises</td>
+            <td>Capitales</td>
         </tr>
     </table>
 
-    <script src="paises.js" type="text/javascript"></script>
+    <script src="paises.js"></script>
+    <script type="text/javascript">CreateTableFromJSON()</script>
 </body>
 </html>
