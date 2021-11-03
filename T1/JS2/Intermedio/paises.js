@@ -81,14 +81,13 @@ var paises = [
     },
 ]
 
-function CreateTableFromJSON() {
-    
-    var instanciadorTabla = document.getElementById("tabla");
+var instanciadorTabla = document.getElementById("tabla");
 
-    //! peligro
-    // For donde van todo el json
-for (var i = 0; i < paises.length; i++) {
-    instanciadorTabla.innerHTML+=`
+function CreateTableFromJSON() {
+
+    // For donde van todo el json, solo imprime
+    for (var i = 0; i < paises.length; i++) {
+        instanciadorTabla.innerHTML+=`
         <tr>
           <th>${paises[i].nombre}</th>
           <th>${paises[i].capital}</th>
@@ -96,14 +95,21 @@ for (var i = 0; i < paises.length; i++) {
     }
 }
 
-function filtrar() {
-            $(document).ready(function() {
-                $("#gfg").on("keyup", function() {
-                    var value = $(this).val().toLowerCase();
-                    $("#geeks tr").filter(function() {
-                        $(this).toggle($(this).text()
-                        .toLowerCase().indexOf(value) > -1)
-                    });
-                });
-            });
-  }
+function filter() {
+    
+    let input = document.getElementById('search').value.toLowerCase();
+
+    instanciadorTabla.innerHTML="";
+
+    for (var i = 0; i < paises.length; i++) {
+
+        if(paises[i].capital.toLowerCase().includes(input) || paises[i].nombre.toLowerCase().includes(input)) {
+            instanciadorTabla.innerHTML+=`
+            <tr>
+                <th>${paises[i].nombre}</th>
+                <th>${paises[i].capital}</th>
+            </tr>`
+        }
+
+    }
+}

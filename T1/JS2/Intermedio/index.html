@@ -7,18 +7,19 @@
 </head>
 <body>
     <h1>Capitales de Europa</h1>
-    <input type="text"  id="myInput" onkeyup="filtrar()" placeholder="Busca por capitales">
-
+    <input type="text" id="search" placeholder="Busca por capitales" onkeyup="filter()">
     <br></br>
     
-    <table id="tabla">
+    <table>
         <tr>
             <td>Paises</td>
             <td>Capitales</td>
         </tr>
     </table>
+    <table id="tabla"></table>
 
     <script src="paises.js"></script>
     <script type="text/javascript">CreateTableFromJSON()</script>
+
 </body>
 </html>
