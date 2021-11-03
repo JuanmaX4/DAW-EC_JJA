@@ -96,25 +96,14 @@ for (var i = 0; i < paises.length; i++) {
     }
 }
 
-function filtrar(){
-
-    const filtrar = () =>{
-        let inputValue = document.getElementById("filtrar").value.toLowerCase(); 
-        document.getElementById("tabla").innerHTML = inputValue; 
-    }
-}
-/*<script language="javascript">     
-    function recibir()
-    {
-        var valor = document.getElementById("texto").value;
-        document.write(valor);        
-        
-    }        
-</script> 
-<form id="formulario" method="Post">
-
-<input type="text" id="texto"/>
-<input type="button" name="enviar" onKeyup="recibir();"/>
-
-</form>
-*/
+function filtrar() {
+            $(document).ready(function() {
+                $("#gfg").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#geeks tr").filter(function() {
+                        $(this).toggle($(this).text()
+                        .toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+  }
