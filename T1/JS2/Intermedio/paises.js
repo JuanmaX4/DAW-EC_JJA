@@ -103,7 +103,26 @@ function filter() {
 
     for (var i = 0; i < paises.length; i++) {
 
-        if(paises[i].capital.toLowerCase().includes(input) || paises[i].nombre.toLowerCase().includes(input)) {
+        if(paises[i].capital.toLowerCase().includes(input)) {
+            instanciadorTabla.innerHTML+=`
+            <tr>
+                <th>${paises[i].nombre}</th>
+                <th>${paises[i].capital}</th>
+            </tr>`
+        }
+
+    }
+}
+
+function filter2() {
+    
+    let input = document.getElementById('search2').value.toLowerCase();
+
+    instanciadorTabla.innerHTML="";
+
+    for (var i = 0; i < paises.length; i++) {
+
+        if(paises[i].nombre.toLowerCase().includes(input)) {
             instanciadorTabla.innerHTML+=`
             <tr>
                 <th>${paises[i].nombre}</th>
