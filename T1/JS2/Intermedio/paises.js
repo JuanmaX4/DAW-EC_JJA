@@ -95,9 +95,9 @@ function CreateTableFromJSON() {
     }
 }
 
-function filter() {
+function filtradorCapitales() {
     
-    let input = document.getElementById('search').value.toLowerCase();
+    let input = document.getElementById('capitales').value.toLowerCase();
 
     instanciadorTabla.innerHTML="";
 
@@ -114,9 +114,9 @@ function filter() {
     }
 }
 
-function filter2() {
+function filtradorPaises() {
     
-    let input = document.getElementById('search2').value.toLowerCase();
+    let input = document.getElementById('paises').value.toLowerCase();
 
     instanciadorTabla.innerHTML="";
 
