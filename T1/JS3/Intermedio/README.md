@@ -1,35 +1,23 @@
 # DAW-EC_JJA
  
-# Analisis HTML & JavaScript 📑
+# Analisis Tres en Raya
 
-## DOM 📋
+## Reglas 🕹
 ___
-El `DOM` es la estructura de objetos que genera el navegador cuando se carga un documento y se puede alterar mediante `Javascript` para cambiar dinámicamente los contenidos y aspecto de la página.
+Las Reglas son cada uno tiene un turno, y una vez que lo pones en una casilla el turno tuyo se te acaba, y comienza el turno del otro jugador, por otra parte esa casilla que esta rellenada ya sea por una `X` o una `O` no se podra rellenar de nuevo.
 ___
-## Script 
-El elemento `HTML` Script `<script></script>` se utiliza para insertar o hacer referencia a un `script` ejecutable dentro de un documento `HTML` o `XHTML`.
-
-Los `scripts` sin atributo `async` o `defer`, así como las secuencias de comandos en línea, son interpretados y ejecutados inmediatamente, antes de que el navegador continúe procesando la página.
-
-___
-## OnKeyUp
-Es un evento de HTML se produce cuando el usuario deja de escribir y la informacion iria hacia una variable en este ejercicio en un Js.
+## Como Jugar 🎮 
+Cada jugador elige las `X` o las `O`, y en su turno debe poner una, intentando conseguir 3 seguidas en una línea vertical, horizontal o diagonal. Una vez se llenan todos los espacios se termina la partida, finalizando en tablas si ninguno consigue enlazar tres de sus fichas seguidas.
 ___
 
-## InnerHTML
-`InnerHTML` es una propiedad que nos permite leer un dato o asignarlo al contenido de un `div` o bien, del mismo control. Nos facilita la asignación de valores a controles. En el ejemplo utilizamos la propiedad  `instanciadorTabla.innerHTML` para tomar la referencia del `<id="search">` del contenedor.
+## UML Diseño Intermedio JS3 🖼
 ___
-## GetElementById
-Este metodo coge un elemento del documento por medio del valor del atributo id que se le haya asignado.
-___
-## Value
-Value es el valor que tiene los objetos element que puedan tener un contenido, como puede ser: las entradas `<input>` de un formulario.
-___
-## Includes()  
-Es un metodo que evalua si un string contiene un valor String devuelve true si lo contiene y lo contrario falso si no lo contiene.
-___
+![uml](./img/UML.PNG)
 
-## UML Diseño Intermedio JS2 🖼
+## UML Diagrama de Flujos Intermedio JS3 🖼
 ___
-![uml](UML.PNG)
+![uml](./img/Diagrama.PNG)
 
+## UML Caso de Pruebas Intermedio JS3 🖼
+___
+![uml](./img/Prueba.PNG)

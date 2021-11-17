@@ -92,7 +92,6 @@ function  deshabilitarCasillas(y){
     juego_btn.style.cssText = jBtn_e;
 }
 
-
 function nEmpieza(){
 
     juego_btn.style.cssText = jBtn_d;
