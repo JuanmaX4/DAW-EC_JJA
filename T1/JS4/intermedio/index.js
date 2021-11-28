@@ -12,30 +12,55 @@ function reqListener() {
     
     /* Refresca la tabla eliminando la busqueda anterior una vez que introduces otro nuevo pokemon */
 
-    instanciadorTabla.innerHTML=``;
-
-    /* For q recorre las listas de la pokeAPI */
-
+    spritesTabla.innerHTML=``;
+    `<table>`
     for (var i = 0; i < 1; i++) {
-        instanciadorTabla.innerHTML+=`
-        <tr>
-          <td><img src=${obj.sprites.front_default}></td>
-          <td>${obj.name}</td>
-          <td>${obj.height}</td>
-          <td>${obj.weight}</td>`
-          for (let j = 0; j < obj.types.length; j++) {
-            instanciadorTabla.innerHTML+=
-            `<td>${obj.types[j].type.name}</td>`
-          }          
-          for (let j = 0; j < obj.game_indices.length; j++) {
-            instanciadorTabla.innerHTML+=
-            `<td>${obj.game_indices[j].version.name}</td>`
-          }
-        `</tr>`; 
-    }
-}
+      spritesTabla.innerHTML+=`
+      <tr><td><img src=${obj.sprites.front_default}></td>`      
+      
+      nameTabla.innerHTML=``;
+      
+      for (var i = 0; i < 1; i++) {
+        nameTabla.innerHTML+=`
+        <td>${obj.name}</td>`; 
+      }
+      
+      heightTabla.innerHTML=``;
+      for (var i = 0; i < 1; i++) {
+        heightTabla.innerHTML+=`
+        <td>${obj.height}</td>`; 
+      }
+      
+      weightTabla.innerHTML=``;
+      for (var i = 0; i < 1; i++) {
+        weightTabla.innerHTML+=`
+        <td>${obj.weight}</td>`; 
+      }
+      typesTabla.innerHTML=``;
+        for (let j = 0; j < obj.types.length; j++) {
+           typesTabla.innerHTML+=
+           `<td>${obj.types[j].type.name}</td>`;
+        }
 
-var instanciadorTabla = document.getElementById("tabla");
+      versionTabla.innerHTML=``;
+         for (let j = 0; j < obj.game_indices.length; j++) {
+        versionTabla.innerHTML+=
+        `<td>${obj.game_indices[j].version.name}</td>
+        </tr></table>`
+      }
+  }
+    
+      
+
+
+}
+var spritesTabla = document.getElementById("tabla");
+var nameTabla = document.getElementById("tabla2");
+var heightTabla = document.getElementById("tabla3");
+var weightTabla = document.getElementById("tabla4");
+var typesTabla = document.getElementById("tabla5");
+var versionTabla = document.getElementById("tabla6");
+
 
 
 
