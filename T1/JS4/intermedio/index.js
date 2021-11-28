@@ -13,29 +13,30 @@ function reqListener() {
     /* Refresca la tabla eliminando la busqueda anterior una vez que introduces otro nuevo pokemon */
 
     instanciadorTabla.innerHTML=``;
-    versionTabla.innerHTML=``;
-
 
     /* For q recorre las listas de la pokeAPI */
 
     for (var i = 0; i < 1; i++) {
         instanciadorTabla.innerHTML+=`
         <tr>
-          <th><img src=${obj.sprites.front_default}></th>
-          <th>${obj.name}</th>
-          <th>${obj.height}</th>
-          <th>${obj.weight}</th>
-          <th>${obj.types[0].type.name}</th>`
+          <td><img src=${obj.sprites.front_default}></td>
+          <td>${obj.name}</td>
+          <td>${obj.height}</td>
+          <td>${obj.weight}</td>`
+          for (let j = 0; j < obj.types.length; j++) {
+            instanciadorTabla.innerHTML+=
+            `<td>${obj.types[j].type.name}</td>`
+          }          
           for (let j = 0; j < obj.game_indices.length; j++) {
-            versionTabla.innerHTML+=
-            `<th>${obj.game_indices[j].version.name}</th>`
+            instanciadorTabla.innerHTML+=
+            `<td>${obj.game_indices[j].version.name}</td>`
           }
         `</tr>`; 
     }
 }
 
 var instanciadorTabla = document.getElementById("tabla");
-var versionTabla = document.getElementById("tabla2");
+
 
 
 const llamarApi = () => {
