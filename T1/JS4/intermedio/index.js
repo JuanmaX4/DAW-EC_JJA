@@ -13,6 +13,7 @@ function reqListener() {
     /* Refresca la tabla eliminando la busqueda anterior una vez que introduces otro nuevo pokemon */
 
     spritesTabla.innerHTML=``;
+
     `<table>`
     for (var i = 0; i < 1; i++) {
       spritesTabla.innerHTML+=`
@@ -54,6 +55,8 @@ function reqListener() {
 
 
 }
+
+
 var spritesTabla = document.getElementById("tabla");
 var nameTabla = document.getElementById("tabla2");
 var heightTabla = document.getElementById("tabla3");
