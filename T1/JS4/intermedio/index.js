@@ -12,30 +12,59 @@ function reqListener() {
     
     /* Refresca la tabla eliminando la busqueda anterior una vez que introduces otro nuevo pokemon */
 
-    instanciadorTabla.innerHTML=``;
-    versionTabla.innerHTML=``;
+    spritesTabla.innerHTML=``;
 
-
-    /* For q recorre las listas de la pokeAPI */
-
+    `<table>`
     for (var i = 0; i < 1; i++) {
-        instanciadorTabla.innerHTML+=`
-        <tr>
-          <th><img src=${obj.sprites.front_default}></th>
-          <th>${obj.name}</th>
-          <th>${obj.height}</th>
-          <th>${obj.weight}</th>
-          <th>${obj.types[0].type.name}</th>`
-          for (let j = 0; j < obj.game_indices.length; j++) {
-            versionTabla.innerHTML+=
-            `<th>${obj.game_indices[j].version.name}</th>`
-          }
-        `</tr>`; 
-    }
+      spritesTabla.innerHTML+=`
+      <tr><td><img src=${obj.sprites.front_default}></td>`      
+      
+      nameTabla.innerHTML=``;
+      
+      for (var i = 0; i < 1; i++) {
+        nameTabla.innerHTML+=`
+        <td>${obj.name}</td>`; 
+      }
+      
+      heightTabla.innerHTML=``;
+      for (var i = 0; i < 1; i++) {
+        heightTabla.innerHTML+=`
+        <td>${obj.height}</td>`; 
+      }
+      
+      weightTabla.innerHTML=``;
+      for (var i = 0; i < 1; i++) {
+        weightTabla.innerHTML+=`
+        <td>${obj.weight}</td>`; 
+      }
+      typesTabla.innerHTML=``;
+        for (let j = 0; j < obj.types.length; j++) {
+           typesTabla.innerHTML+=
+           `<td>| ${obj.types[j].type.name} |</td>`;
+        }
+
+      versionTabla.innerHTML=``;
+         for (let j = 0; j < obj.game_indices.length; j++) {
+        versionTabla.innerHTML+=
+        `<td>| ${obj.game_indices[j].version.name} |</td>
+        </tr></table>`
+      }
+  }
+    
+      
+
+
 }
 
-var instanciadorTabla = document.getElementById("tabla");
-var versionTabla = document.getElementById("tabla2");
+
+var spritesTabla = document.getElementById("spritesTabla");
+var nameTabla = document.getElementById("nameTabla");
+var heightTabla = document.getElementById("heightTabla");
+var weightTabla = document.getElementById("weightTabla");
+var typesTabla = document.getElementById("typesTabla");
+var versionTabla = document.getElementById("versionTabla");
+
+
 
 
 const llamarApi = () => {

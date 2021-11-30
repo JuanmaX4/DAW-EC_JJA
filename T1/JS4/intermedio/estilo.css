@@ -2,12 +2,14 @@ th, td, p, input {
     font:14px Verdana;
   }
   table, th, td {
-    border: solid 5px black;
+    border: solid 5px rgb(116, 77, 10);
     padding: 2px 3px;
     text-align: center;
     margin: 10px;
+    color: rgb(255, 60, 0);
   }
   
-  td::first-line {
+  td {
     font-weight:bold;
   }
+  
