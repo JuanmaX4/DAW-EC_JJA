@@ -1,6 +1,16 @@
 # DAW-EC_JJA
  
-#Analisis Intermedio
+# Analisis Intermedio 📊
+___
 
-## XMLHttpRequest
+## API 📚
+### ¿Que es una API?
 
+
+___
+## Pokemon 🐾
+
+___
+## XMLHttp 📃
+
+___
