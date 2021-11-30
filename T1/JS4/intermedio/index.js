@@ -50,10 +50,6 @@ function reqListener() {
         </tr></table>`
       }
   }
-    
-      
-
-
 }
 
 
@@ -63,8 +59,6 @@ var heightTabla = document.getElementById("heightTabla");
 var weightTabla = document.getElementById("weightTabla");
 var typesTabla = document.getElementById("typesTabla");
 var versionTabla = document.getElementById("versionTabla");
-
-
 
 
 const llamarApi = () => {
