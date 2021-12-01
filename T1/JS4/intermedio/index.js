@@ -40,7 +40,7 @@ function reqListener() {
       typesTabla.innerHTML=``;
         for (let j = 0; j < obj.types.length; j++) {
            typesTabla.innerHTML+=
-           `<td>${obj.types[j].type.name}</td>`;
+           `<td>| ${obj.types[j].type.name} |</td>`;
         }
 
       versionTabla.innerHTML=``;
@@ -50,21 +50,15 @@ function reqListener() {
         </tr></table>`
       }
   }
-    
-      
-
-
 }
 
 
-var spritesTabla = document.getElementById("tabla");
-var nameTabla = document.getElementById("tabla2");
-var heightTabla = document.getElementById("tabla3");
-var weightTabla = document.getElementById("tabla4");
-var typesTabla = document.getElementById("tabla5");
-var versionTabla = document.getElementById("tabla6");
-
-
+var spritesTabla = document.getElementById("spritesTabla");
+var nameTabla = document.getElementById("nameTabla");
+var heightTabla = document.getElementById("heightTabla");
+var weightTabla = document.getElementById("weightTabla");
+var typesTabla = document.getElementById("typesTabla");
+var versionTabla = document.getElementById("versionTabla");
 
 
 const llamarApi = () => {
@@ -76,3 +70,4 @@ const llamarApi = () => {
 };
 
 boton.addEventListener('click', llamarApi); 
+

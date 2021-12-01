@@ -6,36 +6,54 @@
     <title>Buscar pokemon</title>
     <link rel="stylesheet" href="estilo.css">
 
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Buscado Pokemon:</h1>
+    <h1>Buscando</h1>
 
-    <input type="text" placeholder="Buscar Pokemon" id="buscarPoki" />
-    <button id="boton">Busca a tu pokemon</button>
+    <div>
+        <p>P</p>
+        <p>O</p>
+        <p>K</p>
+        <p>E</p>
+        <p>M</p>
+        <p>O</p>
+        <p>N</p>
+        <p>:</p>
+      </div>
+
+    <input type="text" class="effect" placeholder="Buscar Pokemon" id="buscarPoki" />
+    <button id="boton" class="glow-on-hover" type="button">Busca a tu pokemon</button>
+
+
+    <div class="center-on-page">
+  
+        <div class="pokeball">
+          <div class="pokeball__button"></div>
+        </div>
+        
+      </div>
+
 
     <table>
         <tr>
-
+            <td>Sprite</td>
             <td>Nombre</td>
             <td>Altura</td>
             <td>Peso</td>
             <td>Tipos</td>
-            <td>Sprite</td>
             <td>Versiones</td>
-
         </tr>
-
         <tr>
-            <td id="tabla"></td>
-            <td id="tabla2"></td>
-            <td id="tabla3"></td>
-            <td id="tabla4"></td>
-            <td id="tabla5"></td>
-            <td id="tabla6"></td>
-
+            <td id="spritesTabla"></td>
+            <td id="nameTabla"></td>
+            <td id="heightTabla"></td>
+            <td id="weightTabla"></td>
+            <td id="typesTabla"></td>
+            <td id="versionTabla"></td>
         </tr>
-
     </table>
 
     <script src="./index.js"></script>
