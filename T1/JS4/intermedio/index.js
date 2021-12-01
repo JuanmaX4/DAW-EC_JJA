@@ -46,7 +46,7 @@ function reqListener() {
       versionTabla.innerHTML=``;
          for (let j = 0; j < obj.game_indices.length; j++) {
         versionTabla.innerHTML+=
-        `<td>${obj.game_indices[j].version.name}</td>
+        `<td>| ${obj.game_indices[j].version.name} |</td>
         </tr></table>`
       }
   }
