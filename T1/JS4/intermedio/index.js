@@ -1,4 +1,4 @@
-const buscarPoki = document.getElementById("buscarPoki");
+const buscarPokemon = document.getElementById("buscarPokemon");
 const boton = document.getElementById("boton");
 
 function reqListener() {
@@ -40,13 +40,13 @@ function reqListener() {
       typesTabla.innerHTML=``;
         for (let j = 0; j < obj.types.length; j++) {
            typesTabla.innerHTML+=
-           `<td>| ${obj.types[j].type.name} |</td>`;
+           `<td>| ${obj.types[j].type.name} |<br></td>`;
         }
 
       versionTabla.innerHTML=``;
          for (let j = 0; j < obj.game_indices.length; j++) {
         versionTabla.innerHTML+=
-        `<td>| ${obj.game_indices[j].version.name} |</td>
+        `<td>| ${obj.game_indices[j].version.name} |<br></td>
         </tr></table>`
       }
   }
@@ -62,11 +62,11 @@ var versionTabla = document.getElementById("versionTabla");
 
 
 const llamarApi = () => {
-    let nombre = buscarPoki.value.toString().toLowerCase();
-    var oReq = new XMLHttpRequest();
-    oReq.addEventListener("load", reqListener);
-    oReq.open("GET", `https://pokeapi.co/api/v2/pokemon/${nombre}`, true);
-    oReq.send();
+    let nombre = buscarPokemon.value.toString().toLowerCase();
+    var getPokemon = new XMLHttpRequest();
+    getPokemon.addEventListener("load", reqListener);
+    getPokemon.open("GET", `https://pokeapi.co/api/v2/pokemon/${nombre}`, true);
+    getPokemon.send();
 };
 
 boton.addEventListener('click', llamarApi); 
