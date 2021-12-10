@@ -1,0 +1,114 @@
+<html> 
+  <head> 
+  <title>Calculando determinantes 4x4 javascript</title> 
+  </head> 
+  <body>
+  <script type="text/javascript" src="zepto.min.js" > </script>
+  <script type="text/javascript">
+//creando variables
+  var a00,a01,a02,a03,a10,a11,a12,a13,a20,a21,a22,a23,a30,a31,a32,a33,total,Ta00,Ta01,Ta02,Ta03;
+  //editando funcion para calcular ls determinantes
+  function Calcular_determinante(){
+
+       /*
+                  !a00 a10 a20 a30
+                  !a01 a11 a22 a33
+                  !a02 a12 a23 a34
+                  !a03 a13 a23 a30
+                                             */
+  a00=document.getElementById("a00").value;
+  a01=document.getElementById("a01").value;
+  a02=document.getElementById("a02").value;
+  a03=document.getElementById("a03").value;
+  a10=document.getElementById("a10").value;
+  a11=document.getElementById("a11").value;
+  a12=document.getElementById("a12").value;
+  a13=document.getElementById("a13").value;
+  a20=document.getElementById("a20").value;
+  a21=document.getElementById("a21").value;
+  a22=document.getElementById("a22").value;
+  a23=document.getElementById("a23").value;
+  a30=document.getElementById("a30").value;
+  a31=document.getElementById("a31").value;
+  a32=document.getElementById("a32").value;
+  a33=document.getElementById("a33").value;
+  
+
+   /*
+                   a11 a21 a31
+                   a12 a22 a32
+                   a13 a23 a33
+                     
+                   */
+            Ta00=a00*(a11*a22*a33+
+                      a32*a21*a13+
+                      a12*a23*a31+
+                      a31*a22*a13*-1+
+                      a32*a23*a11*-1+
+                      a12*a21*a33*-1);
+                      
+                      /*
+                       a10 a20 a30
+                       a12 a22 a32
+                       a13 a23 a33
+                       
+                         
+                         */
+            
+            Ta01 = (a01*-1)*(a10*a22*a33+
+                             a12*a23*a30+
+                             a32*a20*a13+
+                             a30*a22*a13*-1+
+                             a32*a23*a10*-1+
+                             a12*a20*a33*-1);
+            
+            /*
+             a10 a20 a30
+             a11 a21 31
+             a13 a23 a33
+             
+               
+               */
+            Ta02=a02*(a10*a21*a33+
+                      a11*a23*a30+
+                      a31*a20*a13+
+                      a30*a21*a13*-1+
+                      a11*a20*a33*-1+
+                      a31*a23*a10*-1);
+            
+                      
+                      /*
+                         a10 a20 a30 
+                         a11 a21 a31
+                         a12 a22 a32
+                         
+                         
+                         */
+            Ta03=(a03*-1)*(a10*a21*a32+
+                           a11*a22*a30+
+                           a31*a20*a12+
+                           a30*a21*a12*-1+
+                           a31*a22*a10*-1+
+                           a11*a20*a32*-1);
+                 
+                 
+                 total=Ta00+Ta01+Ta02+Ta03;
+  
+    var t=$("#total");
+    t.html("Total Determinante 4x4:  "+total); 
+ }
+
+  </script>
+  
+  <br>Ingrese los valores<br>
+    <input type="text"  id ="a00">         <input type="text"  id ="a01"> <input type="text"  id ="a02"><input type="text"  id ="a03">
+<br><input type="text"  id ="a10">         <input type="text"  id ="a11"> <input type="text"  id ="a12"><input type="text"  id ="a13">
+<br><input type="text"  id ="a20">         <input type="text"  id ="a21"> <input type="text"  id ="a22"><input type="text"  id ="a23">
+<br><input type="text"  id ="a30">         <input type="text"  id ="a31"> <input type="text"  id ="a32"><input type="text"  id ="a33">
+<br><input type="button" onClick="Calcular_determinante()" value="Calcular">
+ 
+<div id="total">Total: </div> 
+
+  
+  </body> 
+</html>
