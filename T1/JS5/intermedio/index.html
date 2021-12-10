@@ -3,7 +3,7 @@
   <title>Calculando determinantes 4x4 javascript</title> 
   </head> 
   <body>
-  <script type="text/javascript" src="zepto.min.js" > </script>
+  <!-- <script type="text/javascript" src="zepto.min.js" > </script>
   <script type="text/javascript">
 //creando variables
   var a00,a01,a02,a03,a10,a11,a12,a13,a20,a21,a22,a23,a30,a31,a32,a33,total,Ta00,Ta01,Ta02,Ta03;
@@ -98,17 +98,19 @@
     t.html("Total Determinante 4x4:  "+total); 
  }
 
-  </script>
+  </script>-->
   
   <br>Ingrese los valores<br>
-    <input type="text"  id ="a00">         <input type="text"  id ="a01"> <input type="text"  id ="a02"><input type="text"  id ="a03">
+    <input type="number" value="1" id ="a00">         <input type="text"  id ="a01"> <input type="text"  id ="a02"><input type="text"  id ="a03">
 <br><input type="text"  id ="a10">         <input type="text"  id ="a11"> <input type="text"  id ="a12"><input type="text"  id ="a13">
 <br><input type="text"  id ="a20">         <input type="text"  id ="a21"> <input type="text"  id ="a22"><input type="text"  id ="a23">
 <br><input type="text"  id ="a30">         <input type="text"  id ="a31"> <input type="text"  id ="a32"><input type="text"  id ="a33">
-<br><input type="button" onClick="Calcular_determinante()" value="Calcular">
- 
-<div id="total">Total: </div> 
 
+<br><input type="button" id="calculo" value="Calcular">
+ 
+<div id="total">Total: </div>
+
+<script src="./controlador.js"></script>
   
   </body> 
 </html>

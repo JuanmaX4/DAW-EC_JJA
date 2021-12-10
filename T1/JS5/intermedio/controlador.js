@@ -1,16 +1,11 @@
-function controlador(person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+//matriz: Number[4][4] = [];
+function Calcular_determinante() {
+    var inputElement = document.getElementById('a00');
+    var inputValue = inputElement.value;
+    console.log(inputValue);
 }
-var arr_names = new Array(4);
-function array() {
-    for (var i = 0; i < arr_names.length; i++) {
-        arr_names[i] = i * 2;
-        console.log(arr_names[i]);
-    }
-}
-var usuario = { firstName: "Jane", lastName: "User" };
-document.body.textContent = index(usuario);
-document.body.textContent = index(arr_names);
+var boton = document.getElementById("calculo");
+boton.addEventListener("click", Calcular_determinante);
 /*function mostrar(m){
     
     for (let i = 0; i < m.length; i++) {

@@ -1,5 +1,14 @@
-matriz: Number[4][4] = [];
+//matriz: Number[4][4] = [];
 
+function Calcular_determinante(){
+    const inputElement : HTMLInputElement = <HTMLInputElement>document.getElementById('a00')
+    const inputValue = inputElement.value;
+    console.log(inputValue);
+}
+
+let boton = <HTMLElement>document.getElementById("calculo");
+
+boton.addEventListener("click",Calcular_determinante);
 
 /*function mostrar(m){
     
