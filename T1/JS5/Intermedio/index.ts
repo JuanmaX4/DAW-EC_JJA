@@ -1,4 +1,3 @@
-
 let invest = <HTMLElement>document.getElementById("invest");
 let symmetrical = <HTMLElement>document.getElementById("symmetrical");
 let nul = <HTMLElement>document.getElementById("null");
@@ -137,14 +136,7 @@ function investMatriz() {
     inputElement1.value = a13old
     inputElement23.value = a02old
     inputElement2.value = a23old
-    
 
-
-    
-
-
-
- 
 }
 function showSymmetrical(){
   

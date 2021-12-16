@@ -1,8 +1,8 @@
 # DAW-EC_JJA
  
-# Analisis Intermedio JS5 📊
+# Analisis Intermedio JS5 💿📊
 
-## ¿Que es TypeScript?
+## ¿Que es TypeScript? 📘
 ___
 ~~~
 [JavaScript] es uno de los lenguajes más populares, en parte porque ha evolucionado y mejorado a pasos agigantados en los últimos años.
@@ -18,7 +18,7 @@ Originalmente, productos como `Bing` y `Office 365` despertaron en `Microsoft` l
 `Typescript` es la solución a muchos de los problemas de `JavaScript`, está pensado para el desarrollo de aplicaciones robustas, implementando características en el lenguaje que nos permitan desarrollar herramientas más avanzadas para el desarrollo de aplicaciones.
 
 
-## Diferencias entre JavaScript y Typescript
+## Diferencias entre JavaScript y Typescript 👨‍💻
 ___
 
 `JavaScript` es un lenguaje de `secuencias de comandos dinámico` que se utiliza para crear páginas web interactivas, por lo que no está diseñado para aplicaciones complejas. En cambio, `TypeScript` es un lenguaje estático orientado solamente a objetos.
@@ -33,11 +33,11 @@ Es necesario compilar el código [TypeScript], mientras que en [Javascript] no e
 
 `TypeScript` utiliza conceptos como tipos e interfaces para describir los datos que se utilizan. Ningún concepto de este tipo está disponible con `JavaScript`.
 
-## JavaScript vs. TypeScript: ¿cuál es mejor?
+## JavaScript vs. TypeScript: ¿cuál es mejor❓
 ___
 Después de conocer las diferencias de `JavaScript` y `TypeScript`, podemos decir que si eres un desarrollador experimentado y estás trabajando en proyectos de `codificación relativamente pequeños`, `JavaScript` es el ideal para ti. Sin embargo, si tienes los conocimientos previos de `JavaScript` y un equipo de [desarrolladores con experiencia], `TypeScript` es la opción perfecta. ¡Conocer la magia de qué es `TypeScript` te ayudará en cualquier proyecto que ejecutes!
 
-## ¿Que es una matriz? 
+## ¿Que es una matriz? 📋 
 ___
 El `objeto` con que se representan las conexiones en la anterior página es una `matriz`. En general, una matriz es un conjunto ordenado en una `estructura de filas y columnas`. Los `elementos` de este conjunto pueden ser `objetos matemáticos de muy variados tipos`, aunque de forma particular, trabajaremos exclusivamente con matrices formadas por números reales.
 
@@ -53,13 +53,13 @@ El número de filas y columnas que tiene una matriz se llama dimensión de la ma
 
 Dos `matrices` son [iguales] si son de igual `dimensión` y [coincide] el `valor` de los `elementos` que ocupan la `misma posición en ambas`.
 
-## Compilación codigo
+## Compilación codigo 💬
 ___
 Es el proceso por el cual el `código fuente` de un `programa escrito` en un `lenguaje de programación “A”` se traduce a código fuente de un `lenguaje de programación “B”`.
 
 El caso más común es cuando el `código origen` está escrito en un `lenguaje de programación de “alto nivel”` `(C, Java, PHP u otros lenguajes de tercera generación)` y se [traduce] a `código máquina` que pueda ejecutar directamente el ordenador. Pero hay muchas otras posibilidades como pasar por una representación intermedia en `bytecode` como es el caso típico de `Java`.
 
-## Transpirar codigo
+## Transpirar codigo 😤 JAR JAR JAR
 ___
 La transpilación es un caso particular de la [compilación]. Es decir, todo transpilador es también un compilador pero al revés no es cierto, hay compiladores que no se pueden considerar transpiladores. ¿Y cuál es la característica que convierte un compilador en transpilador?: la relación entre los lenguajes origen y destino de la traducción.
 ~~~
@@ -72,5 +72,5 @@ Una traducción de `Java` a `Bytecode` sería una [compilación]. Una traducció
 
 ## UML Diseño Intermedio JS5 🖼
 ___
-![uml](./intermedio/img/uml.PNG)
+![uml](./uml/uml.PNG)
 ___
