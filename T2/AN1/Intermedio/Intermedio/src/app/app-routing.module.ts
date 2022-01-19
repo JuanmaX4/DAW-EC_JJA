@@ -4,6 +4,7 @@ import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 import { MyLoginComponent } from './my-login/my-login.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'app-login', pathMatch: 'full'},
   {path: 'app-login', component: MyLoginComponent},
   {path: 'app-mi-componente', component: MiComponenteComponent}
 ];
