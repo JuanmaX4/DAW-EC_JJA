@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/avanzado",
+            "outputPath": "dist/intermedio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Avanzado:build:production"
+              "browserTarget": "Intermedio:build:production"
             },
             "development": {
-              "browserTarget": "Avanzado:build:development"
+              "browserTarget": "Intermedio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Avanzado:build"
+            "browserTarget": "Intermedio:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "Avanzado"
+  "defaultProject": "Intermedio"
 }

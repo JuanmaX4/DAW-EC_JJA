@@ -12,4 +12,11 @@ Un componente en `Angular` es un elemento que está compuesto por:
 Un archivo que será nuestro `Template` (app. ... ts), ese archivo debe incluir una clase y esta es la que va a contener las propiedades que se van a usar en la vista (HTML) y los métodos que será las acciones que se ejecutarán en la vista.
 ~~~
 
+# Gifs de Prueba 🎞
 
+## 1º Primer Gif 🥇
+![Alt text](./Videos/1Gif.gif)
+___
+## 2º Primer Gif 🥈
+![Alt text](./Videos/2Gif.gif)
+___
