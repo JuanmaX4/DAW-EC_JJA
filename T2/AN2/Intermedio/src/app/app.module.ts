@@ -8,6 +8,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ContraComponent } from './contra/contra.component';
 import { VerfCuentaComponent } from './verf-cuenta/verf-cuenta.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VerfCuentaComponent } from './verf-cuenta/verf-cuenta.component';
     InicioComponent,
     RegistroComponent,
     ContraComponent,
-    VerfCuentaComponent
+    VerfCuentaComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
