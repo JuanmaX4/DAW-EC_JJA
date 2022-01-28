@@ -1,0 +1,29 @@
+<div class="login">
+    <div class="form">
+      <form class="login-form">
+        <span class="material-icons">Registro</span>
+        <input type="text" placeholder="Nombre" required />
+        <input type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+        <p>
+          <label for="movie">Película favorita  </label>
+          <select
+            id="movie"
+            v-model="movie"
+            name="movie">
+        <br>
+            <option>...</option>
+            <option>Star Wars III La venganza de los Sith</option>
+            <option>Alien el octavo pasajero</option>
+            <option>Spiderman No Way Home</option>
+          </select>
+        </p>
+        <a routerLink="/app-login" routerLinkActive="active">
+          <button
+            type="submit"
+            value="Enviar">
+            Login
+            </button>
+        </a>
+        </form>
+    </div>
+</div>
