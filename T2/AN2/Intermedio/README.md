@@ -1,27 +1,56 @@
-# Intermedio
+# AN2 Intermedio 💿
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+Este proyecto esta creado por [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0
+___
+## Uso de Navegación o Routing Module 🚤
+___
 
-## Development server
+### ¿Qué es routing en Angular? 📡
+___
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    --- Introducción al Routing ----
 
-## Code scaffolding
+El sistema de `routing` es el encargado de reconocer cuál es la `ruta` que el `usuario` quiere mostrar, presentando la pantalla correcta en cada momento. Esto es útil por varios motivos, entre ellos:
+___
+1. Permite que la `aplicación` responda a `rutas internas`. Es decir, no hace falta entrar siempre en la pantalla principal de la `aplicación` y `navegar` hasta la pantalla que queremos ver realmente.
+___
+2. Permite que el `usuario` pueda usar el historial de `navegación`, yendo hacia atrás y hacia adelante con el `navegador` para volver a una de las pantallas de `aplicación` que estaba viendo antes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+___
 
-## Build
+    --- ¿Como usarlo? ---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`Angular` nos permite construir `Single Page Applications` (SPAs, por sus siglas en inglés). ... Con el `Router` podremos crear varias páginas con distintas `URLs`, `tipo` / `user`, /`register`, etc, sin necesidad de crear otro documento `HTML` a parte del que ya viene con `Angular`, el `index`.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ¿Que es NG? 🗄
+___
+El comando ng new crea un área de trabajo de `Angular` en la carpeta y genera una nueva estructura de la aplicación. ... Puedes editar los archivos generados directamente, o agregarlos y modificarlos usando los comandos del `CLI`.
+___
+## ¿Que es un componente? 📎
+___
 
-## Running end-to-end tests
+Un `componente` en `Angular` es un bloque de código `re-utilizable`, que consta básicamente de 3 archivos: 
+~~~
+Un CSS, un HTML (también conocido como plantilla o en inglés, template) y un TypeScript (en adelante, TS). 
+~~~
+La carpeta `app` con la que viene `Angular` por defecto es un `componente`, aunque un tanto especial.
+___
+## Para mas ayuda ❗
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Puedes usar el comando `ng help` o ver mas sobre la documentacion de Angular [Angular CLI Visión general y referencia de comandos](https://angular.io/cli) Pagina Oficial.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Gifs de Prueba 🎞
+
+## 1º Primer Gif 🥇
+![Alt text](./Videos/1.gif)
+___
+## 2º Primer Gif 🥈
+![Alt text](./Videos/2.gif)
+___
+## 3º Primer Gif 🥉
+![Alt text](./Videos/3.gif)
+___
+
+# FIN 🔚
