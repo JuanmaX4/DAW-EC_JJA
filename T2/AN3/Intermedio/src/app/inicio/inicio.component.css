@@ -1,0 +1,130 @@
+body {
+    margin: 25px 50px;
+    font-family: Montserrat, sans-serif;
+    background: #e9f0f4;
+}
+
+.wrap {
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+  color: #585858;
+  margin-top: 0;
+}
+
+small {
+  display: block;
+  color: #585858;
+  font-size: 75%;
+  margin-top: 25px;
+}
+
+small > a {
+  color: #585858;
+}
+
+p {
+  font-weight: 700;
+  color: #585858;
+  margin: 30px 0 25px;
+}
+
+/* Aqui empieza el codigo CSS de los botones. */
+
+.css-boton {
+  display: inline-block;
+  background-color: #E6E6E6;
+  padding: .5em 1em;
+  color: #444;
+  font-family: inherit;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #999;
+  border: transparent;
+  border-radius: 2px;
+  margin: 3px;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.css-boton-foco,
+.css-boton:focus,
+.css-boton:hover {
+  filter: alpha(opacity=90);
+  background-image: -webkit-linear-gradient(transparent, rgba(0,0,0,.05) 40%, rgba(0,0,0,.1));
+  background-image: linear-gradient(transparent, rgba(0,0,0,.05) 40%, rgba(0,0,0,.1));
+}
+
+.css-boton-activo,
+.css-boton:active {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+  border-color: #000;
+}
+
+.css-boton-desactivado,
+.css-boton-desactivado:active,
+.css-boton-desactivado:focus,
+.css-boton-desactivado:hover,
+.css-boton[disabled] {
+  border: none;
+  background-image: none;
+  filter: alpha(opacity=40);
+  opacity: .4;
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.boton-primario {
+  background-color: #0078e7;
+  color: #fff;
+}
+
+.boton-info,
+.boton-exito,
+.boton-advertencia,
+.boton-error {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.boton-info {
+  background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.boton-exito {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.boton-advertencia {
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.boton-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.boton-xpequeno {
+  font-size: 70%;
+}
+
+.boton-pequeno {
+  font-size: 85%;
+}
+
+.boton-grande {
+  font-size: 110%;
+}
+
+.boton-xgrande {
+  font-size: 125%;
+}
