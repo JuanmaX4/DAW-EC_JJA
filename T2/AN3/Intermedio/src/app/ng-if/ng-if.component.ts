@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contacto } from '../models/contacto';
 
 @Component({
   selector: 'app-ng-if',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIFComponent implements OnInit {
 
-  constructor() { }
+  public contactos : Array<Contacto>
 
-  ngOnInit(): void {
+  constructor() { 
+    this.contactos = [
+      new Contacto('../../../../assets/imagen.jpg','Pepe'),
+      new Contacto('../../../../assets/imagen.jpg','Ricardo'),
+      new Contacto('../../../../assets/imagen.jpg','Claudette'),
+    ]
   }
+  
 
+   ngOnInit(): void {
+  }
+  
+  
 }

@@ -1,1 +1,11 @@
-<p>ng-for works!</p>
+<table>
+    <tr>
+      <td>Nombre</td>
+      <td>Edad</td>
+    </tr>
+    <tr *ngFor="let contacto of contactos">
+      <td>{{contacto.nombre}} <span *ngIf="contacto.edad>=18">(Mayor)</span></td>
+      <td>{{contacto.edad}}</td>   
+      <td> <img [src]="contacto.imagen"></td>
+    </tr>
+  </table>

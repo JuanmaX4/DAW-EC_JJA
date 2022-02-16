@@ -1,43 +1,4 @@
-<table class="default">
-
-    <tr>
-  
-      <th>Hoy</th>
-  
-      <th>Mañana</th>
-  
-      <th>Sábado</th>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>Soleado</td>
-  
-      <td>Mayormente soleado</td>
-  
-      <td>Parcialmente nublado</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>19°C</td>
-  
-      <td>17°C</td>
-  
-      <td>12°C</td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>E 13 km/h</td>
-  
-      <td>E 11 km/h</td>
-  
-      <td>S 16 km/h</td>
-  
-    </tr>
-  
-  </table>
+<div *ngFor="let contacto of contactos;">
+    <app-comunicacion-componente [contacto]="contacto"></app-comunicacion-componente>
+</div>
+<div *ngIf="contactos.length <=2"><h1>Tienes pocos amigos en tu lista de contactos</h1></div>
