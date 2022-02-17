@@ -1,27 +1,39 @@
 # Intermedio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+Este proyecto ha sido creado por [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
-## Development server
+___
+## Ng-If ❓
+___
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+La directiva estructural `*ngIf` permite mostrar u ocultar elementos del `DOM`. Recordemos que una etiqueta solo puede tener una directiva estructural, luego si podemos disponer dentro de una etiqueta interior otro directiva estructural.
+___
+## Ng-For 🧮
+___
+Explicamos la directiva `ngFor`, o `*ngFor`, que nos permite repetir una serie de veces un bloque de `HTML` en aplicaciones `Angular`. En este artículo vamos a conocer y practicar con una directiva de las más importantes en `Angular`, que es la directiva `ngFor`, capaz de hacer una repetición de elementos dentro de la página.
+___
+## Comunicacion entre Componentes 📡
+___
+Las aplicaciones web en las que destaca `Angular` suelen ser complejas y con mucha variedad funcional en diversas páginas. A menudo esas páginas están repletas de `formularios`, `informes` y `botones`. 
+~~~
+La solución viene de mano del viejo principio divide y vencerás: La [componentización]
+~~~~
+___
+## UML Diseño Intermedio AN3 🖼
+___
+![uml](./src/app/UML/uml.PNG)
+___
 
-## Code scaffolding
+# Gifs de Prueba 🎞
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 1º Primer Gif 🥇
+![Alt text](./src/app/Videos/1.gif)
+___
+## 2º Primer Gif 🥈
+![Alt text](./src/app/Videos/2.gif)
+___
+## 3º Primer Gif 🥉
+![Alt text](./src/app/Videos/3.gif)
+___
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# FIN 🔚
