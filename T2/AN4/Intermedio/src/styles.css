@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+h2 {
+    color: #3c1b66;
+    font-weight: normal;
+    font-size: 35px;
+    font-family: Arial;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #747377;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: Arial;
+    text-transform: lowercase;
+  }

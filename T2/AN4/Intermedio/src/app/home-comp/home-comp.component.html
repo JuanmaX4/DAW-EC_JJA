@@ -1,0 +1,13 @@
+
+  <h2><span>Elige el tipo:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+      <option value="fire">Fuego</option>
+      <option value="grass">Planta</option>
+      <option value="water">Agua</option>
+      
+  </select>
+  <p><span>Has elegido el tipo: </span><b>{{selectType}}</b></p>
+
+<div *ngFor="let pokemon of pokemons;">
+    <h2><a href="{{pokemon?.urlPoke}}">{{pokemon?.name}}</a></h2>
+</div> 
