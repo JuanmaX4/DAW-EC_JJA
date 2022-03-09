@@ -14,3 +14,18 @@ ___
 ___
 En una `Interfaz gráfica de usuario`, lista desplegable es un widget que permite al usuario seleccionar una o más opciones. Las hay de dos tipos: las que aparecen con el fin de seleccionar sólo una opción, y las que permiten seleccionar varias opciones y muestran al menos dos.
 ___
+
+
+# Gifs de Prueba 🎞
+
+## 1º Primer Gif 🥇
+![Alt text](./src/app/Videos/1.gif)
+___
+## 2º Primer Gif 🥈
+![Alt text](./src/app/Videos/2.gif)
+___
+## 3º Primer Gif 🥉
+![Alt text](./src/app/Videos/3.gif)
+___
+
+# FIN 🔚
