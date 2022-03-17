@@ -1,27 +1,38 @@
-# Intermedio
+# Intermedio AN4 💿
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+___
+## PokeAPI 🐾
+___
+Ese es el propósito de `Pokéapi`, una `API RESTful` creada específicamente para informar a todos los jugadores de `Pokémon`. Es, de lejos, la mayor base de datos gratuita sobre `Pokémon`, y puedes utilizarla tanto y como quieras.
 
-## Development server
+## ¿Que es un servicio? 🚽
+___
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Un `servicio` es la capa encargada de traer/proporcionarnos los datos a nuestra aplicación de `Angular`. Normalmente, nuestro `servicio` para acceder a estos datos suelen conectarse al servidor donde están almacenada dicha información, por ejemplo una `BBDD`, una `API Rest`, etc.
 
-## Code scaffolding
+___
+## DropDown 📏
+___
+En una `Interfaz gráfica de usuario`, lista desplegable es un widget que permite al usuario seleccionar una o más opciones. Las hay de dos tipos: las que aparecen con el fin de seleccionar sólo una opción, y las que permiten seleccionar varias opciones y muestran al menos dos.
+___
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# Gifs de Prueba 🎞
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 1º Primer Gif 🥇
+![Alt text](./src/app/Videos/1.gif);
+___
+## 2º Primer Gif 🥈
+![Alt text](./src/app/Videos/2.gif);
+___
+## 3º Primer Gif 🥉
+![Alt text](./src/app/Videos/3.gif);
+___
 
-## Running unit tests
+# FIN 🔚
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Comentario Final
+~~~
+Me ha encantado mucho las clases y las retrospectiva Ricardo ha sido la mejor clase que he tenido en todos mis años academicos, todo echo con tranquilidad, todo sin presiones y siempre con una explicación excelente increible. Muchas Gracias por todo Ricardo <3 ❤ 💯
+~~~ 

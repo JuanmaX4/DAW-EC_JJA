@@ -1,31 +1,29 @@
-import { HttpClientModule } from '@angular/common/http';
+
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PokemonHeaderComponent } from 'src/components/pokemon-header/pokemon-header.component';
-import { PokemonHomepageComponent } from 'src/components/pokemon-homepage/pokemon-homepage.component';
-import { TypeFilterPipe } from 'src/pipes/typeFilter.pipe';
-import { MaterialModule } from '../modules/material-module';
+import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeCompComponent } from './home-comp/home-comp.component';
+import { ListaPokemonsCompComponent } from './lista-pokemons-comp/lista-pokemons-comp.component';
+import { PokemonCompComponent } from './pokemon-comp/pokemon-comp.component';
+import { HighlightDirective } from './highlight.directive';
+import { PokemonService } from '../services/pokemon.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonHomepageComponent,
-    PokemonHeaderComponent,
-    TypeFilterPipe
+    HomeCompComponent,
+    ListaPokemonsCompComponent,
+    PokemonCompComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    MaterialModule,
-    FormsModule,
-    BrowserAnimationsModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PokemonService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
