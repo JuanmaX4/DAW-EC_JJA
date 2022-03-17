@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <img
+    class="pokemon-logo"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png"
+  />
+
+  <div class="filter-component">
+    <mat-label class="filter">Filtrar por Tipos</mat-label>
+    <mat-form-field class="form-field">
+      <mat-select [(ngModel)]="currentType" (ngModelChange)="onTypeSelected()">
+        <mat-option *ngFor="let type of types" [value]="type">
+          {{ type | titlecase }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</mat-toolbar>
