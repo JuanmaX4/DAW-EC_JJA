@@ -14,6 +14,7 @@ function reqListener() {
 
     spritesTabla.innerHTML=``;
 
+
     `<table>`
     for (var i = 0; i < 1; i++) {
       spritesTabla.innerHTML+=`

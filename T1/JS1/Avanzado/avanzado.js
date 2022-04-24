@@ -9,7 +9,7 @@ function getTabla(variable, variable2, variable3) {
     <tr>
         <th>27</th>
         <th>10</th>
-        <th>2021</th>
+        <th>${variable3}</th>
     </tr>
       </table> `;  
 
